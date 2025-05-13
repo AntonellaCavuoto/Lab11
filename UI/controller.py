@@ -11,7 +11,18 @@ class Controller:
         self._listColor = []
 
     def fillDD(self):
-        pass
+        colori = self._model.getColori()
+        for j in colori:
+            self._view._ddcolor.options.append(ft.dropdown.Option(j))
+            self._view._page.update()
+
+        i = 2015
+        for j in range(4):
+            if i <= 2018:
+                self._view._ddyear.options.append(ft.dropdown.Option(str(i)))
+                i += 1
+            self._view._page.update()
+
 
 
     def handle_graph(self, e):

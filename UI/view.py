@@ -74,3 +74,12 @@ class View(ft.UserControl):
 
     def update_page(self):
         self._page.update()
+
+    # def fill_anno(self):
+    #     i = 2015
+    #     for j in range(4):
+    #         if i <= 2018:
+    #             self._ddyear.options.append(ft.dropdown.Option(str(i)))
+    #             i += 1
+    #         self._page.update()
+
